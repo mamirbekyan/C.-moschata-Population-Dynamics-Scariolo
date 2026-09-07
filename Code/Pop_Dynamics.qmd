@@ -1,0 +1,27 @@
+---
+title: "Pop_Dynamics"
+format: html
+editor: visual
+---
+
+#Introduction
+
+```{r}
+getwd()
+```
+
+#Loading Packages and Libraries
+```{r}
+
+```
+
+#Data Loading
+```{r}
+
+```
+
+##Initial Wrangling
+```{r}
+
+```
+
