@@ -6,7 +6,7 @@ editor: source
   message: false
 ---
 
-#Introduction
+#Setup
 
 ```{r Setup, message=F}
 # Loading packages (every time you open R)
@@ -18,7 +18,7 @@ library(readr) # to export csv
 library(tidyverse) # to wrangle the data
 ```
 
-#Loading Packages and Libraries
+##Loading Packages and Libraries
 
 ```{r Reading Data}
 getwd()
@@ -31,14 +31,74 @@ View(data_deficit)
 View(data_full)
 ```
 
-#Data Loading
+##Data Wrangling
 
 ```{r}
+#Full Irrigation
+data_full1 <- data_full %>%
+    select(-Plant_ID)
+
 
 ```
 
-##Initial Wrangling
-
+#Task 1: Germination Rate
 ```{r}
+#By Variety
+
+
+#By Treatment
+
+
+#By Block
+
 
 ```
+
+#Task 2: Summary of Our Data
+```{r}
+#Table of Variety, # of Plants we have per block and variety and total number of plants for each in DI and FI
+
+```
+
+
+#Task 3: Distribution of Data
+```{r}
+#Voicenote: By Block, Variety, and Treatment. Make several graphs with an average behaviour line over time. 
+
+
+```
+
+#Task 4: Transplants
+```{r}
+#Table summarizing the transplants we have per variety and block (Where we put them, how many each row had, etc)
+
+
+#Effect of Transplants: How Frequently do all plants fail, and do transplants fail more frequently
+
+```
+
+#Task 5: Stats; Final Observation Average Score
+```{r}
+#2-way ANOVA with Variety x Treatment to see if treatment and variety effect score on the final day
+
+
+```
+
+
+#Task 6: Stage Advancement
+```{r}
+#The average date we see direct sown plants move into the next stage (Emergence, 10's, 20's, 50's, 60's, 70's)
+
+
+#The average date we see transplants move into the next stage (Emergence, 10's, 20's, 50's, 60's, 70's)
+
+
+
+#Is there a statistically significant difference in the dates of advancement? This way we will determine if our transplants are growing inherently differently, and if we need to remove them/consider them separately in future stats
+
+
+#All Data Together
+
+```
+
+
