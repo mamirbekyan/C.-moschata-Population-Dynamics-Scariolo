@@ -1,27 +1,44 @@
 ---
-title: "Pop_Dynamics"
+title: "Pop_Dynamics_2026_Season"
 format: html
-editor: visual
+editor: source
+  warning: false
+  message: false
 ---
 
 #Introduction
 
-```{r}
-getwd()
+```{r Setup, message=F}
+# Loading packages (every time you open R)
+library(readxl) # to read excel files
+library(janitor) # to clean data
+library(dplyr) # wrangling
+library(tidyr) # wrangling
+library(readr) # to export csv
+library(tidyverse) # to wrangle the data
 ```
 
 #Loading Packages and Libraries
-```{r}
 
+```{r Reading Data}
+getwd()
+
+data_deficit <- read_csv("../data/Compiled Phenological Data - Deficit Irrigation.csv")
+
+data_full <- read_csv("../data/Compiled Phenological Data - Full Irrigation.csv")
+
+View(data_deficit)
+View(data_full)
 ```
 
 #Data Loading
+
 ```{r}
 
 ```
 
 ##Initial Wrangling
+
 ```{r}
 
 ```
-
